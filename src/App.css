@@ -1,38 +1,125 @@
-.App {
+.main-container {
+  display: flex;
+}
+
+.content-container {
+  margin-left: 250px; 
+  width: calc(100% - 250px);
+}
+
+.header {
+  top: 0;
+  height: 50px; 
+  background-color: cadetblue;
+  width: 75%;
+  position: fixed; 
+  z-index: 1; 
+ 
+  border: 3px solid red;
+  padding: 10px;
+  
+}
+
+.footer {
+  bottom: 0;
+  height: 50px; 
+}
+
+.post-tag {
+  margin: 10px;
+  padding: 20px;
+}
+
+.storyCard {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 80%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: none;
   text-align: center;
+  background-color: rgb(148, 160, 95);
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-container button {
+  margin-inline: 20px;
+  width: 6rem;
+  font-weight: 900;
+  padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.createPost {
+  width: 80%;
+  margin: 30px;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: cornflowerblue;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 1rem;
+}
+
+.storyContainer {
+  overflow-x: auto;
+  margin-top: 50px; 
+  padding: 20px;
+  height: calc(100vh - 100px); 
+  position: relative; 
+}
+
+.appName {
+  color: blue;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.authFrom {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 40vw;
+  height: 50vh;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 30vh;
+  box-shadow: rgba(73, 11, 219, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.fromEle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fromEle input {
+  width: 80%;
+  margin: 10px;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.signbtn {
+  width: 60%;
+}
+
+.spiner {
+  margin-top: 30%;
+}
+
+.sidebar {
+  height: 100vh;
+  position: fixed; 
+  width: 250px; 
+  background-color: cadetblue;
+  
+  
+  left: 0;
 }

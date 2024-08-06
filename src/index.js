@@ -22,7 +22,9 @@ const router = createBrowserRouter([
       { path: 'create-post', element: <FormComponent /> }
     ]
   }
-]);
+], {
+  basename: "/social_app" // Add the basename here
+});
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
